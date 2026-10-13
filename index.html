@@ -31,18 +31,21 @@
   border-top: 1px solid var(--line); color: var(--sky); text-decoration: none; font-size: .9rem; font-weight: 700; }
 .landing .video img { width: 30px; height: 53px; border-radius: 6px; object-fit: cover; }
 .landing .items { display: grid; gap: 8px; }
-.landing .item { display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 2px 12px;
+.landing .item { display: grid; grid-template-columns: 64px 1fr auto; align-items: center; gap: 12px;
   padding: 10px 12px 10px 10px; border-radius: 12px; background: rgba(255,255,255,.08);
   color: var(--text); text-decoration: none; transition: background .15s, transform .15s; }
 .landing .item:active { transform: scale(.98); }
 @media (hover: hover) { .landing .item:hover { background: rgba(255,255,255,.14); } }
-.landing .item-img { grid-row: 1 / span 2; width: 64px; height: 64px; border-radius: 8px;
+.landing .item-img { width: 64px; height: 64px; border-radius: 8px;
   object-fit: cover; background: #fff; outline: 1px solid rgba(0,0,0,.06); outline-offset: -1px; }
 .landing span.item-img { background: rgba(255,255,255,.1); }
-.landing .item-name { grid-column: 2; font-weight: 700; align-self: end; }
-.landing .item-name:nth-last-child(2) { grid-row: 1 / span 2; align-self: center; }
-.landing .item-note { grid-column: 2; color: var(--muted); font-size: .8rem; align-self: start; }
-.landing .item-go { grid-column: 3; grid-row: 1 / span 2; padding: 7px 10px; border-radius: 8px;
+.landing .item-text { display: flex; flex-direction: column; align-items: flex-start; gap: 2px; min-width: 0; }
+.landing .item-badge { padding: 2px 7px; border-radius: 999px; background: rgba(250,204,21,.16);
+  color: var(--accent); font-size: .7rem; font-weight: 700; white-space: nowrap; }
+.landing .rank-note { margin: 8px 0 0; color: var(--muted); font-size: .72rem; }
+.landing .item-name { font-weight: 700; }
+.landing .item-note { color: var(--muted); font-size: .8rem; }
+.landing .item-go { padding: 7px 10px; border-radius: 8px;
   background: var(--accent); color: #111; font-size: .8rem; font-weight: 800; white-space: nowrap; }
 .landing .empty { color: var(--muted); text-align: center; padding: 40px 0; }
 .landing footer { margin-top: 28px; text-align: center; color: var(--muted); font-size: .8rem; }
@@ -56,7 +59,7 @@
     <div><h1>알려두림 추천템 모음</h1><p>영상에 나온 준비물, 최신순으로 정리했어요</p></div>
   </header>
   <p class="notice">이 페이지는 쿠팡 파트너스 활동의 일환으로, 이에 따른 일정액의 수수료를 제공받습니다.</p>
-  <article class="card"><time>2026.10.14</time><h2>내일 아침 기온 하루 새 10도 뚝<br>일교차 15도, 이것 챙기세요</h2><div class="items"><a class="item" href="https://link.coupang.com/a/hOYHWLzg6u" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img class="item-img" src="https://thumbnail2.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3aef/a5382ad9c67c441d08ec8d005ee635b1e6d284682d921f69a3c2da276b51.jpg" alt="" loading="lazy"><span class="item-name">경량 패딩 조끼</span><span class="item-note">TOPBOY 남녀공용 초경량 U넥</span><span class="item-go">오늘 가격 보기 ›</span></a><a class="item" href="https://link.coupang.com/a/hOYMDHhh2y" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img class="item-img" src="https://t5a.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/213106184456189-3078eb08-02fd-42a5-b9d2-5d00d03628c8.jpg" alt="" loading="lazy"><span class="item-name">전기요</span><span class="item-note">한일의료기 탄소열선 HL-D205</span><span class="item-go">오늘 가격 보기 ›</span></a><a class="item" href="https://link.coupang.com/a/hOYQ16euUS" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img class="item-img" src="https://t5c.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/323618008542155-4fc1aca1-01d2-410e-a476-9abb9c4030b6.jpg" alt="" loading="lazy"><span class="item-name">가습기</span><span class="item-note">홈플래닛 초음파 4L</span><span class="item-go">오늘 가격 보기 ›</span></a></div><a class="video" href="https://youtube.com/shorts/gLBr3V5np5Q" target="_blank" rel="noopener"><img src="thumbs/gLBr3V5np5Q.jpg" alt=""><span>▶ 영상 다시 보기</span></a></article>
+  <article class="card"><time>2026.10.14</time><h2>내일 아침 기온 하루 새 10도 뚝<br>일교차 15도, 이것 챙기세요</h2><div class="items"><a class="item" href="https://link.coupang.com/a/hOYHWLzg6u" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img class="item-img" src="https://thumbnail2.coupangcdn.com/thumbnails/remote/492x492ex/image/vendor_inventory/3aef/a5382ad9c67c441d08ec8d005ee635b1e6d284682d921f69a3c2da276b51.jpg" alt="" loading="lazy"><span class="item-text"><span class="item-badge">🏆 랭킹 TOP3</span><span class="item-name">경량 패딩 조끼</span><span class="item-note">TOPBOY 남녀공용 초경량 U넥</span></span><span class="item-go">오늘 가격 보기 ›</span></a><a class="item" href="https://link.coupang.com/a/hOYMDHhh2y" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img class="item-img" src="https://t5a.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/213106184456189-3078eb08-02fd-42a5-b9d2-5d00d03628c8.jpg" alt="" loading="lazy"><span class="item-text"><span class="item-badge">🏆 랭킹 TOP3</span><span class="item-name">전기요</span><span class="item-note">한일의료기 탄소열선 HL-D205</span></span><span class="item-go">오늘 가격 보기 ›</span></a><a class="item" href="https://link.coupang.com/a/hOYQ16euUS" target="_blank" rel="sponsored noopener" referrerpolicy="unsafe-url"><img class="item-img" src="https://t5c.coupangcdn.com/thumbnails/remote/492x492ex/image/retail/images/323618008542155-4fc1aca1-01d2-410e-a476-9abb9c4030b6.jpg" alt="" loading="lazy"><span class="item-text"><span class="item-badge">🏆 랭킹 TOP3</span><span class="item-name">가습기</span><span class="item-note">홈플래닛 초음파 4L</span></span><span class="item-go">오늘 가격 보기 ›</span></a></div><p class="rank-note">🏆 랭킹: 10.14 쿠팡 검색 결과 기준</p><a class="video" href="https://youtube.com/shorts/gLBr3V5np5Q" target="_blank" rel="noopener"><img src="thumbs/gLBr3V5np5Q.jpg" alt=""><span>▶ 영상 다시 보기</span></a></article>
   <footer><a href="https://www.youtube.com/@알려두림" target="_blank" rel="noopener">유튜브 채널 바로가기</a></footer>
 </main>
 </body>
